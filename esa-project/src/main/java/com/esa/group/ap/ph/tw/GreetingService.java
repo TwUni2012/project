@@ -15,9 +15,9 @@ public class GreetingService {
     
     public String greet(String name) {
         if (name != null && !name.trim().isEmpty()) {
-            return "Hallo " + name + "!";
+            return "From GreetingService: \nHallo " + name + "!";
         } else {
-            return "Hallo Welt";
+            return "From GreetingService: \n Sie haben vergessen Ihren Namen einzugeben!";
         }
     }
 }
