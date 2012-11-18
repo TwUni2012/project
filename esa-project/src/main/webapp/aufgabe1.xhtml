@@ -12,8 +12,9 @@ and open the template in the editor.
     <body>
         Hier wird der EJB-Konsumiert!!!
         <h:form>
-            <h:inputText value="gb eingeben"/>
-            <h:commandButton action="123" value="submit"/>
+            <h:inputText value="#{greetingManager.name}"/>
+            <h:commandButton action="aufgabe1-result" value="submit"/> 
+            <!--action fuer commandButton muss noch implementiert werden-->
         </h:form>
     </body>
 </html>

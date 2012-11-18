@@ -4,10 +4,13 @@
  */
 package com.esa.group.ap.ph.tw;
 
+import javax.ejb.Stateless;
+
 /**
  *
  * @author tiloW7-2012
  */
+@Stateless
 public class GreetingService {
     
     public String greet(String name) {
