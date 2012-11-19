@@ -7,11 +7,13 @@ and open the template in the editor.
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html">
     <head>
-        <title>Index</title>
+        <title>TODO supply a title</title>
     </head>
     <body>
+        Bitte Benutzernamen eingeben:
         <h:form>
-            <h:commandButton action="esa-aufgaben" value="ESA-Aufgaben"/>
+            <h:inputText value="#{taskPlaner.username}"/>
+            <h:commandButton action="aufgabe1-terminplaner-mainpage" value="Anmelden"/>
         </h:form>
     </body>
 </html>

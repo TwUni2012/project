@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title>Terminplaner von #{taskPlaner.username}</title>
+    </head>
+    <body>
+        <h2>Terminplaner von #{taskPlaner.username}</h2>
+        <hr></hr>
+        Alle Termine:
+        <br></br>
+        #{taskPlaner.listAll()}
+        <hr></hr>
+        <form id="newtask">
+            <h:inputText value="#{taskPlaner.taskYear}" />
+            <h:inputText value="#{taskPlaner.taskMonth}" />
+            <h:inputText value="#{taskPlaner.taskDay}" />
+            <br></br>
+            <h:inputTextarea value="#{taskPlaner.text}" />
+            <br></br>
+            <h:commandButton action="#{taskPlaner.createNewTask()}" value="Neuen Task erstellen"/>
+        </form>
+    </body>
+</html>
