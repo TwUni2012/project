@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        Hier wird das EJB konsumiert!!!
+        <h:form>
+            <h:inputText value="#{greetingManager.name}"/>
+            <h:commandButton action="aufgabe1-greetingresult" value="submit"/> 
+            <!--action fuer commandButton muss noch implementiert werden-->
+        </h:form>
+        <h:form>
+            <h:commandLink action="esa-aufgaben" value="zurück"/>
+        </h:form>
+    </body>
+</html>

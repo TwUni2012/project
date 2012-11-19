@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <h:form>
+            <h:panelGrid id="grid-calc" columns="1">
+                <h:inputText value="#{calcManager.zahl1}"/>
+                <h:inputText value="#{calcManager.zahl2}"/>
+                <h:commandButton action="aufgabe1-calc" value="results"/>
+            </h:panelGrid>
+        </h:form>
+        <h2>add: #{calcManager.add()}</h2>
+        <h2>sub: #{calcManager.sub()}</h2>
+        <h2>mul: #{calcManager.mul()}</h2>
+        <h2>div: #{calcManager.div2()}</h2>
+
+    </body>
+</html>
